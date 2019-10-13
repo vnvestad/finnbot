@@ -1,14 +1,12 @@
-# -*- coding: utf-8 -*-
-
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
+# Items reflect the structure of the official API, 
+# e.g. https://www.finn.no/api/static/preview/ad/realestate-homes.xml
 
 import scrapy
 
 
-class FinnbotItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class Ad(scrapy.Item):
+    id = scrapy.Field()
+    item = scrapy.Field()
+
+class RealestateHome(scrapy.Item):
+    estimated_value = scrapy.Field()
