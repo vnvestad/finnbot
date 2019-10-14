@@ -6,6 +6,10 @@ services:
     - "8080:8080"
     depends_on:
     - db
+    environment:
+    - MONGODB_SERVER=db
+    - MONGODB_PORT=27017
+    - MONGODB_DB=finnbot
   db:
     image: mongo
     ports:
