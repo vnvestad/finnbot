@@ -11,6 +11,6 @@ services:
     - MONGODB_PORT=27017
     - MONGODB_DB=finnbot
   db:
-    image: mongo
+    image: andresvidal/rpi3-mongodb3
     ports:
     - "27017:27017"
